@@ -10,7 +10,7 @@ public class UserCredentials {
     @NotNull
     @NotEmpty
     @Size(min = 2, max = 30)
-    @Pattern(regexp = "[a-z]+", message = "Expected lowercase Latin letters")
+    @Pattern(regexp = "[A-z]+", message = "Expected Latin letters")
     private String name;
 
     public String getName() {
@@ -24,7 +24,7 @@ public class UserCredentials {
     @NotNull
     @NotEmpty
     @Size(min = 2, max = 30)
-    @Pattern(regexp = "[a-z]+", message = "Expected lowercase Latin letters")
+    @Pattern(regexp = "[A-z]+", message = "Expected Latin letters")
     private String surname;
 
     public String getSurname() {
