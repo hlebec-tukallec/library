@@ -10,7 +10,7 @@ public class BookCredentials {
     @NotNull
     @NotEmpty
     @Size(min = 2, max = 60)
-    @Pattern(regexp = "[a-z]+", message = "Expected lowercase Latin letters")
+    @Pattern(regexp = "[A-z]+", message = "Expected Latin letters")
     private String title;
 
     public String getTitle() {
@@ -24,7 +24,7 @@ public class BookCredentials {
     @NotNull
     @NotEmpty
     @Size(min = 2, max = 60)
-    @Pattern(regexp = "[a-z]+", message = "Expected lowercase Latin letters")
+    @Pattern(regexp = "[A-z]+", message = "Expected Latin letters")
     private String author;
 
     public String getAuthor() {
